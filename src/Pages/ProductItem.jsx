@@ -37,6 +37,7 @@ function ProductItem() {
 
   function handleAddtoCart() {
     addQuantity(product, itemNo);
+    setItemNo(1);
   }
 
   function handleShopNow() {
