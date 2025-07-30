@@ -1,0 +1,168 @@
+@import 'tailwindcss';
+body {
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+.heading {
+    font-weight: 500;
+}
+
+
+/* Input Number Arrow */
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+
+/* Navigation */
+
+.side-navbar {
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    /* padding-top: 60px; */
+    padding-inline: 20px;
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+}
+
+.side-navbar.show {
+    transform: translateX(0);
+}
+
+.small-no-nav {
+    color: white;
+    background-color: #da3f3f;
+    border-radius: calc(infinity * 1px);
+    font-weight: 700;
+    min-width: 22px;
+    min-height: 22px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* Cart Section */
+
+.cart-bar {
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* padding-top: 60px; */
+    transition: transform 0.5s ease;
+    transform: translateX(100%);
+}
+
+.cart-bar.show {
+    transform: translateX(0);
+}
+
+
+/* Arrow Styling */
+
+.far {
+    background-color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 13px;
+}
+
+.far:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Cart Table */
+
+
+/* .cart-table {
+    border-bottom: 1px solid black;
+} */
+
+.cart-header {
+    text-align: start;
+    padding-block: 15px;
+    padding-inline: 15px;
+}
+
+.cart-table td {
+    padding-inline: 15px;
+    padding-block: 15px;
+    border-bottom: 1px solid;
+}
+
+
+/* Checkout Table */
+
+.checkout-table td,
+.shopping-checkout td {
+    padding-block: 10px;
+}
+
+.checkout-table td:nth-child(even) {
+    text-align: right;
+    font-weight: 500;
+}
+
+.checkout-page-border tr,
+.shopping-checkout tr {
+    border-top: 1px solid #eee;
+}
+
+.shopping-checkout td:nth-child(even) {
+    text-align: right;
+}
+
+
+/* Sign-up Form */
+
+
+/* .signup-form label {
+    padding-bottom: 7px;
+} */
+
+.signup-form input,
+.signup-form select {
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    width: 100%;
+    padding: 3px 18px;
+    height: 45px;
+    outline: none;
+    margin-top: 7px;
+}
